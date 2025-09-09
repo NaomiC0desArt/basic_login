@@ -6,5 +6,94 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="side-image">
+        <img src="img-gym.jpg" alt="image real gym" />
+
+        <div class="logo-container">
+          <h1 id="logo">Smart<span class="orange-text">Fit</span></h1>
+        </div>
+
+        <div class="credits">
+          <p>Photo from <a href="https://www.smartfit.com.br">SmartFit</a> real website</p>
+        </div>
+      </div>
+
+      <div class="form-side">
+        <div class="form-message">
+          <h2>
+            Welcome to Smart<span class="orange-text">Fit</span> family, where
+            every step you take brings you closer to your goals. Here, you're
+            not just a member; you're part of a community that supports and
+            motivates you. Come and experience the difference of training in a
+            place that feels like home.
+          </h2>
+
+          <h2>Together, we are <span class="orange-text">stronger!</span></h2>
+        </div>
+
+        <div class="form-content">
+          <h2>Join our community!!</h2>
+
+          <form class="form" id="form-gym">
+            <div class="input-box">
+              <label for="name">First name</label>
+              <input type="text" name="user-name" id="name" required />
+            </div>
+            <div class="input-box">
+              <label for="lastName">Last name</label>
+              <input type="text" name="user-lastName" id="lastName" required />
+            </div>
+            <div class="input-box">
+              <label for="email">Email</label>
+              <input type="email" name="user-email" id="email" required />
+            </div>
+            <div class="input-box">
+              <label for="phoneNumber">Phone number</label>
+              <input
+                type="text"
+                name="user-phone"
+                id="phoneNumber"
+                required
+                minlength="12"
+                pattern="^\d{3}-\d{3}-\d{4}$"
+                title="Please enter a valid phone number, example: 809-459-XXXX"
+              />
+            </div>
+            <div class="input-box">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                name="user-password"
+                id="password"
+                required
+                maxlength="25"
+                minlength="8"
+              />
+              <span></span>
+            </div>
+            <div class="input-box">
+              <label for="password-confirmation">Confirm password</label>
+              <input
+                type="password"
+                name="user-password-confirmation"
+                id="password-confirmation"
+                required
+                maxlength="25"
+                minlength="8"
+              />
+              <span></span>
+            </div>
+          </form>
+        </div>
+
+        <div class="form-submit">
+          <button type="submit" form="form-gym">Create Account</button>
+
+          <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

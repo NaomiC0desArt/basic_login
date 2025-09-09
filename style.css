@@ -1,0 +1,253 @@
+@font-face {
+  font-family: "Colmeak";
+  src: url("fonts/Colmeak.woff2") format("woff2"),
+    url("fonts/Colmeak.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto-bold";
+  src: url("fonts/Roboto-Bold.woff2") format("woff2"),
+    url("fonts/Roboto-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Roboto-Regular.woff2") format("woff2"),
+    url("fonts/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Lt";
+  src: url("fonts/Roboto-Light.woff2") format("woff2"),
+    url("fonts/Roboto-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  background-color: #f9fafb;
+  color: #37353E;
+}
+
+#logo {
+  font-family: "Colmeak";
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.side-image {
+  height: 100vh;
+  flex: 1;
+  position: relative;
+}
+
+.side-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.logo-container{
+  position: absolute;
+  background-color: rgba(90, 78, 52, 0.565);
+  width: 100%;
+  color: white;
+  text-align: center;
+  top: 200px;
+  font-size: 2.5rem;
+}
+
+.credits{
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  color: #f3f3f3;
+}
+
+.form-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 20px;
+  flex: 1;
+}
+
+.form-content {
+  box-shadow: 3px 7px 17px -5px rgba(168,168,168,0.75);
+  background-color: #fff;
+  padding: 25px 0 25px 50px;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  width: 80%;
+  font-size: 15px;
+  column-gap: 20px;
+  row-gap: 15px;
+}
+
+.input-box {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-message,
+.form-submit {
+  padding: 0 50px;
+}
+
+.form-message > h2 {
+  margin-bottom: 30px;
+}
+
+.form-content > h2 {
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 1.3rem;
+}
+
+.orange-text {
+  color: #f9b434;
+  font-style: italic;
+}
+
+input {
+  border-radius: 5px;
+  border: 1px solid #d6d9dc;
+}
+
+input:focus{
+  border: none;
+  outline: 1px solid #f9b434;
+}
+
+input[type="password"]:invalid {
+  border-color: rgb(232, 76, 76);
+}
+
+input[type="password"]:valid {
+  border-color: rgb(60, 166, 28);
+}
+
+a{
+  color: #f9b434;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:visited{
+  color:#dec525;
+}
+
+.form-submit > button{
+  border: none;
+  border-radius: 6px;
+  background-color: #f9b434;
+  color: #3a311c;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 8px 45px;
+  box-shadow: 3px 7px 17px -12px rgba(0,0,0,0.75);
+  margin-bottom: 30px;
+}
+
+.form-submit > button:hover{
+  background-color: #d48b01;
+  color: #f3f3f3;
+}
+
+label{
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
